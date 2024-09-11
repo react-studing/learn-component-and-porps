@@ -1,0 +1,19 @@
+.post {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 4px #167270;
+}
+.post-h1 {
+  margin: 10px 0;
+}
+.post-hr {
+  margin: 10px 0;
+  width: 95%;
+}
+.post-p {
+  margin: 10px 0;
+}

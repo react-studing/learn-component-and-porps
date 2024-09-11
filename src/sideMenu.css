@@ -1,0 +1,8 @@
+.side-menu {
+  width: 30%;
+  border: solid 4px #167270;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
