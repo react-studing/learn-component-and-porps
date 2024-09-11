@@ -6,10 +6,10 @@ export default function SideMenu() {
   return (
     <>
       <div className="side-menu">
-        <TagButton>
+        <TagButton title="جديدة">
           <p>imogi 1</p>
         </TagButton>
-        <TagButton>
+        <TagButton title="الأكثر قراءة">
           <img
             src={firsimg}
             alt="first-img"
@@ -18,7 +18,7 @@ export default function SideMenu() {
             style={{ borderRadius: "10px" }}
           />
         </TagButton>
-        <TagButton>
+        <TagButton title="مقاللات مميزة">
           <p>imogi 2</p>
           <img
             src={secondeimg}
