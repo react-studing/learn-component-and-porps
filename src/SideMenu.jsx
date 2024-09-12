@@ -28,6 +28,7 @@ export default function SideMenu() {
             style={{ borderRadius: "10px" }}
           />
         </TagButton>
+        <TagButton title="" />
       </div>
     </>
   );

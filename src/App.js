@@ -2,6 +2,8 @@ import "./App.css";
 import MyHeader from "./MyHeader";
 import Post from "./Post";
 import SideMenu from "./SideMenu";
+const showCategories = true;
+
 function App() {
   return (
     <div className="App">
@@ -20,10 +22,17 @@ function App() {
           />
           <Post title="Post 3" description="this is the body of post 3" />
         </div>
-        <SideMenu />
+        <AppSideMenu />
       </div>
     </div>
   );
+}
+function AppSideMenu() {
+  if (showCategories) {
+    return <SideMenu />;
+  } else {
+    return <></>;
+  }
 }
 
 export default App;
