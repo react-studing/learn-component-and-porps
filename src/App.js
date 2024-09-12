@@ -1,3 +1,4 @@
+import { jsx } from "react/jsx-runtime";
 import "./App.css";
 import MyHeader from "./MyHeader";
 import Post from "./Post";
@@ -8,6 +9,7 @@ const postAtributes = [
   {
     title: "20",
     description: "اكادمية مخصصة لتعليم البرمجة بمختلف لغاتها و تقنياتها",
+    jsx: <h1>اكادمية ترميز</h1>,
   },
   {
     title: "hello world",
@@ -31,7 +33,7 @@ function App() {
                 title={element.title}
                 description={element.description}
               >
-                {index === 0 ? <h1>اكادمية ترميز</h1> : <></>}
+                {element.jsx}
               </Post>
             );
           })}
